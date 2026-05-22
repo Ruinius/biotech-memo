@@ -40,22 +40,12 @@ Developed by researchers Yue, Xing, Chen, and Fu, *ClinicalAgent* is a multi-age
 * **Performance:** MAKAR achieved an average F1-score improvement of **7% to 8%** across clinical datasets and reached **100% accuracy** in controlled matching tasks. Crucially, it maintains high performance on smaller, open-source LLMs, allowing for privacy-preserving local deployment that secures sensitive patient health records.
 * **Citation:** Shi, H., Zhang, J., & Zhang, K. "Enhancing Clinical Trial Patient Matching through Knowledge Augmentation and Reasoning with Multi-Agent." *arXiv preprint arXiv:2411.14637* (2024). Link: [arXiv:2411.14637](https://arxiv.org/abs/2411.14637)
 
-### Medable Agent Studio: GxP-Compliant Enterprise Orchestration
-Medable's *Agent Studio* provides a low-code/no-code enterprise platform enabling clinical operations teams to deploy autonomous agents grounded in GxP compliance:
-* **The eTMF and CRA Agents:** Pre-configured agents run in the background to automate Trial Master File (TMF) document classification and organization. The CRA Agent connects directly to EDC, CTMS, and laboratory systems to proactively audit data, flag risk patterns, and draft pre-visit site summaries.
-* **GxP Guardrails:** Employs rigorous RAG verification and human-in-the-loop validation checkpoints, ensuring that agent actions strictly adhere to regulatory mandates.
-* **Source:** [Medable — Agentic AI for Clinical Trials](https://www.medable.com/platform/agent-studio)
-
 ### BioXconomy: CRA Workflow Transformation
 An industry analysis in *BioXconomy* details how agentic AI is transforming the clinical trial process for Clinical Research Associates (CRAs):
 * **Eliminating "White Space":** Proactive risk-based monitoring (RBM) agents continuously audit data streams to identify and resolve compliance risks in real-time, eliminating the weeks of delay ("white space") between site visits.
 * **CRA Empowerment:** Agents handle 80% of routine verification, site messaging, and monitoring report generation, shifting the CRA role from travel-heavy administrative auditing to high-value medical oversight and site relationship management.
 * **Source:** [BioXconomy — How AI Agents Are Transforming the Clinical Trial Process for CRAs](https://www.bioxconomy.com/clinical-and-research/how-ai-agents-are-transforming-the-clinical-trial-process-for-cras)
 
-### Narrativa Clinical Atlas: Coordinated Protocol Automation
-Narrativa utilizes a clinical multi-agent swarm ("Clinical Atlas") to automate the structured authoring of clinical trial protocols aligned with the ICH M11 standards:
-* **Swarm Architecture:** Multiple agents operate in parallel, including a *Protocol Design Agent* (drafts trial arms, endpoints, and methodologies), a *Protocol Burden Agent* (evaluates visit frequencies and procedural complexity to optimize patient retention), a *Protocol Study Population Agent* (checks representativeness), and a *Protocol Auditor Agent* (cross-references against regulatory guidelines).
-* **Source:** [Narrativa — Protocol Clinical Trials Automation with AI Agents](https://www.narrativa.com/protocol-clinical-trials-automation-with-ai-agents)
 
 ### JMIR AI (2026): Sociotechnical and Economic Framework
 A 2026 publication in *JMIR AI* evaluates the actual organizational economics of integrating LLM agents in patient recruitment:
@@ -73,7 +63,7 @@ Here is how autonomous AI agents support and empower the clinical trial team acr
 
 * **Chief Medical Officer (CMO) / VP of Clinical Development**
   * **Responsibilities:** Owns the final clinical protocol and the Target Product Profile (TPP)—the document defining what the drug aims to achieve (safety, efficacy, dosing) to be competitive in the market. They act as the primary medical face to key opinion leaders (KOLs) and regulatory advisory panels.
-  * **AI Agent 10x Productivity Mechanism:** Leverages clinical multi-agent protocol automation systems (like **Narrativa's Clinical Atlas** swarm) to orchestrate ICH M11-compliant protocol design. Specialized agents (including *Protocol Design*, *Protocol Burden*, and *Protocol Auditor* agents) work in parallel to check representativeness, evaluate investigator/patient procedural burden, and audit designs against regulatory guidelines. This compresses protocol drafting timelines from 6–9 months to under 2 weeks, representing a 10x productivity increase in strategic design, while lowering downstream protocol amendments by up to 80%.
+  * **AI Agent 10x Productivity Mechanism:** Leverages clinical multi-agent protocol automation systems to orchestrate ICH M11-compliant protocol design. Specialized agents (including *Protocol Design*, *Protocol Burden*, and *Protocol Auditor* agents) work in parallel to check representativeness, evaluate investigator/patient procedural burden, and audit designs against regulatory guidelines. This compresses protocol drafting timelines from 6–9 months to under 2 weeks, representing a 10x productivity increase in strategic design, while lowering downstream protocol amendments by up to 80%.
 * **Lead Biostatistician**
   * **Responsibilities:** This role becomes critical in Phase 3 to ensure the trial is properly "powered" (has enough patients) to prove statistical significance. They design the statistical analysis plan (SAP), manage interim data readouts, and guard against bias to prevent a devastating Phase 3 miss on primary endpoints.
   * **AI Agent 10x Productivity Mechanism:** Deploys multi-agent biostatistics programming pipelines. An autonomous *SAP Architect Agent* ingests raw EDC schemas to draft comprehensive statistical plans, while parallel *Code Generator* and *Audit* agents automatically write and run GxP-compliant SAS/R scripts. The agents perform independent double-programming to mathematically verify results, completely eliminating manual coding backlogs and accelerating the generation of interim Tables, Listings, and Figures (TLFs) by 10x.
@@ -106,7 +96,7 @@ Here is how autonomous AI agents support and empower the clinical trial team acr
   * **AI Agent 10x Productivity Mechanism:** Orchestrates a multi-agent regulatory submission swarm. Specialized drafting agents ingest raw preclinical and clinical dossiers to generate Module 2 (Summaries) and Module 5 (Clinical Study Reports) of the CTD. In parallel, a dedicated *Auditor Agent* cross-references every drafted clinical claim and data point directly back to source SAS tables and raw clinical databases. This compresses the timeline for NDA/BLA dossier assembly from several months to under two weeks, achieving a 10x productivity leap.
 * **Head of Clinical Quality & Inspection Readiness**
   * **Responsibilities:** Ensures absolute adherence to Good Clinical Practice (GCP). They run proactive, internal mock-audits of trial sites and data repositories so that when regulatory inspectors arrive for pre-approval inspections (PAI), the company avoids critical data integrity findings.
-  * **AI Agent 10x Productivity Mechanism:** Deploys continuous inspection-readiness agents (such as Medable's **eTMF and CRA Agents**). The agents run persistent background audits across the electronic Trial Master File (eTMF) and EDC, automatically classifying documents against the DIA TMF Reference Model and identifying incomplete signatures, missing files, or logical discrepancies. This shifts GCP compliance from high-stress quarterly audits to a continuous, real-time readiness model, reducing inspection preparation workloads by 10x.
+  * **AI Agent 10x Productivity Mechanism:** Deploys continuous inspection-readiness agents (such as specialized **eTMF and CRA Agents**). The agents run persistent background audits across the electronic Trial Master File (eTMF) and EDC, automatically classifying documents against the DIA TMF Reference Model and identifying incomplete signatures, missing files, or logical discrepancies. This shifts GCP compliance from high-stress quarterly audits to a continuous, real-time readiness model, reducing inspection preparation workloads by 10x.
 
 ### 5. Commercial Readiness & Market Access
 *The team building the runway for commercial launch.*
@@ -129,7 +119,7 @@ Here is how autonomous AI agents support and empower the clinical trial team acr
 Rather than categorizing companies by modality, the ecosystem is better understood by their operational reliance on autonomous AI agents:
 
 ### 1. Agent-Orchestrated Clinical Developers
-These organizations focus their AI-native efforts directly on the clinical trial bottleneck. They deploy multi-agent swarms (e.g., Medable's Agent Studio or Narrativa's Clinical Swarm) to automate clinical trials, design robust protocols, and support investigators. By automating CRA monitoring and CDM cleansing, they eliminate operational "white space," compress development timelines by 40-60%, and drastically reduce trial conduct errors.
+These organizations focus their AI-native efforts directly on the clinical trial bottleneck. They deploy multi-agent swarms to automate clinical trials, design robust protocols, and support investigators. By automating CRA monitoring and CDM cleansing, they eliminate operational "white space," compress development timelines by 40-60%, and drastically reduce trial conduct errors.
 
 ### 2. Closed-Loop Wet Lab Platforms
 Modality and biological specialists that use automated robotic testing to feed predictive ML engines. While highly sophisticated, these platforms are primarily focused on the early stages of target prediction. They must transition to agentic clinical development to prevent their statistically predicted assets from stalling in complex Phase 2/3 clinical execution.
@@ -141,6 +131,6 @@ Traditional biopharma firms that purchase access to third-party ML screening pla
 
 1. **Prioritize Team Empowerment Over Target Math:** Developing a drug requires human clinical execution. AI-native operations succeed by using autonomous AI agents to remove cognitive and administrative friction from the clinical trial team.
 2. **Eliminate Operational "White Space":** Trial delays are caused by administrative handoffs and manual audit backlogs. Deploying autonomous agents as digital teammates ensures real-time compliance, continuous data cleaning, and immediate patient matching.
-3. **Build Multi-Agent Orchestration Loops:** Isolated models fail because they require constant human translation. True AI-native systems deploy swarms of specialized agents (like Stanford's Virtual Biotech model or Narrativa's Swarms) that collaborate, critique, and audit each other to execute complex workflows.
+3. **Build Multi-Agent Orchestration Loops:** Isolated models fail because they require constant human translation. True AI-native systems deploy swarms of specialized agents (like Stanford's Virtual Biotech model or other clinical multi-agent frameworks) that collaborate, critique, and audit each other to execute complex workflows.
 
 *Research compiled: May 2026*

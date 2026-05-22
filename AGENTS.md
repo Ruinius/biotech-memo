@@ -16,9 +16,10 @@ Below is the complete file and directory layout of the repository:
 * **`AGENTS.md`** - *[This File]* Primary reference for developers/agents. Contains structure, environment rules, and guidelines.
 * **`LICENSE`** - MIT License for this codebase.
 * **`docs/`** - Guidelines and documentation.
-  * `docs/writing_style.md` - Core writing guidelines detailing tone, structure, and formatting.
+  * `docs/formatting.md` - Technical markdown formatting, layout, and typographic rules.
+  * `docs/writing_style.md` - Core writing guidelines detailing tone, structure, and style.
 * **`inputs/`** - Directory for primary source files (e.g., raw PDFs, text transcripts) provided by the user.
-* **`reference/`** - Reference materials that establish style and factual benchmarks (e.g., standard PDFs or pre-existing memos).
+* **`reference/`** - Reference materials that establish style and formatting (e.g., standard PDFs or pre-existing memos).
 * **`research/`** - Structured source-level research profiles generated during Step 4 of the workflow.
 * **`output/`** - Finished memo drafts in markdown, Word (.docx), and PDF formats.
   * `output/outline.md` - Structured, fact-grounded blueprint for the final executive memo.
@@ -48,9 +49,10 @@ Below is the complete file and directory layout of the repository:
 
 ## 4. Architectural Patterns & Guidelines
 
-### Writing Style Alignment
-All compiled memos must strictly follow `docs/writing_style.md`:
+### Writing Style & Formatting Alignment
+All compiled memos must strictly follow `docs/writing_style.md` and `docs/formatting.md`:
 * **Tone**: Professional, operator-led, fact-driven, decisive, and humble but expert.
+* **Layout**: Standardized metadata headers, clear chapter numbering, comparative tables, and structured subheading-led flows.
 * **Format Restrictions**: 
   * **AVOID** developer callout blocks or GitHub-style alerts (such as `[!IMPORTANT]`, `[!NOTE]`, `[!WARNING]`) in executive outputs.
   * **AVOID** horizontal separator lines (`---`) in output documents.
