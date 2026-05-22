@@ -21,6 +21,7 @@ Below is the complete file and directory layout of the repository:
 * **`reference/`** - Reference materials that establish style and factual benchmarks (e.g., standard PDFs or pre-existing memos).
 * **`research/`** - Structured source-level research profiles generated during Step 4 of the workflow.
 * **`output/`** - Finished memo drafts in markdown, Word (.docx), and PDF formats.
+  * `output/outline.md` - Structured, fact-grounded blueprint for the final executive memo.
 * **`skills/`** - Custom tools and workspace integrations.
   * `skills/research_memo/SKILL.md` - Definition of the `research-memo` custom agent skill.
   * `skills/scripts/` - Executable Python helper utilities.

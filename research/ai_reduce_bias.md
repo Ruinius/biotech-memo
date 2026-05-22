@@ -125,6 +125,42 @@ A comprehensive study on AI in healthcare decision-making found:
 
 **Source:** *PLOS Digital Health* (2025) — [DOI: 10.1371/journal.pdig.0000651](https://doi.org/10.1371/journal.pdig.0000651)
 
+## Agentic and Multi-Agent Frameworks for Bias Mitigation
+
+While traditional machine learning focuses on statistical debiasing of data, emergent **agentic architectures** and **multi-agent systems (MAS)** actively counteract human and model-level cognitive biases through structured interactions, role-playing, and latent concept manipulation.
+
+### 1. Multi-Agent Debate (MAD) & Overcoming "Degeneration-of-Thought" (DoT)
+Traditional LLM self-reflection suffers from **Degeneration-of-Thought (DoT)**—a machine equivalent of confirmation bias where an isolated model gains confidence in its initial, potentially incorrect hypothesis and becomes unable to pivot during self-reflection.
+* **Mechanism:** The **Multi-Agent Debate (MAD)** framework addresses DoT by instantiating multiple agents that engage in a "tit-for-tat" debate, overseen by a neutral judge agent. This interaction forces the consideration of counterfactuals and dissenting evidence, breaking cognitive rigidity.
+* **Biotech Application:** By deploying an adversarial "Devil's Advocate" agent during clinical trial design or target selection, R&D teams are forced to confront contradictory evidence, counteracting confirmation bias and optimism bias.
+* **Source:** Liang et al. "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate." *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)*. [arXiv:2305.19118](https://arxiv.org/abs/2305.19118)
+
+### 2. Sycophancy Mitigation & Preserving "Productive Disagreement"
+Multi-agent systems are vulnerable to **inter-agent sycophancy**—the tendency of models to prioritize consensus and agreeability over objective truth. This leads to **disagreement collapse**, where agents prematurely converge on incorrect conclusions to maintain harmony (replicating human groupthink and consensus bias).
+* **Mechanism:** Research shows that the optimal multi-agent architecture requires a carefully balanced pool of agent personas:
+  * *Peacemakers:* Agents prompted to seek alignment and resolve differences.
+  * *Troublemakers:* Agents prompted to maintain independent, adversarial positions and challenge peer assertions.
+* **Biotech Application:** At stage-gate "go/no-go" committees, a multi-agent system configured with persistent "Troublemaker" agents prevents the organization from sliding into groupthink, ensuring that critical safety or efficacy gaps are thoroughly interrogated before capital is committed.
+* **Source:** Yao et al. "Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate." *AWS AI Labs & University of Wisconsin-Madison* (September 2025). [arXiv:2509.23055](https://arxiv.org/abs/2509.23055)
+
+### 3. Dynamic Prompt Refinement for Consensus Optimization
+When multi-agent systems debate, they often consume high compute costs and suffer from communication overhead. If not controlled, they can also fall victim to sycophantic alignment.
+* **Mechanism:** The **CONSENSAGENT** framework models multi-agent deliberation as an optimization task, dynamically refining agent prompts in real-time based on inter-agent exchanges. This actively suppresses sycophancy, enabling the system to reach high-quality, unbiased consensus with significantly fewer debate rounds.
+* **Biotech Application:** Accelerates high-stakes portfolio prioritization decisions by optimizing the discussion flow between diverse virtual R&D expert agents, keeping the process highly efficient while eliminating consensus bias.
+* **Source:** Pitre et al. "CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation." *Findings of the Association for Computational Linguistics: ACL 2025*. [DOI: 10.18653/v1/2025.findings-acl.1141](https://doi.org/10.18653/v1/2025.findings-acl.1141)
+
+### 4. Inference-Time Representation Debiasing (MoLaCE)
+Multi-agent debates are powerful but computationally expensive. To achieve the benefits of debiasing within a single model, researchers developed inference-time representation techniques.
+* **Mechanism:** **MoLaCE (Mixture of Latent Concept Experts)** is a training-free framework that identifies latent conceptual directions within a single LLM's internal representations that correspond to *input confirmation bias* (the tendency to agree with a user's implied preferred hypothesis). It instantiates virtual "experts" by applying varying activation strengths along these latent directions and mixes their predictions at inference time.
+* **Biotech Application:** When an executive asks a single R&D agent to evaluate a favored asset, MoLaCE prevents the agent from simply rubber-stamping the executive's belief, internally simulating a multi-agent debate to provide an objective, debiased analysis at a fraction of the compute cost.
+* **Source:** Yao et al. "Single LLM Debate, MoLaCE: Mixture of Latent Concept Experts Against Confirmation Bias." *OpenReview & arXiv* (2024/2025). [arXiv:2412.02324](https://arxiv.org/abs/2412.02324)
+
+### 5. Real-World Trial Design & Selection Bias Optimization (Trial Pathfinder)
+In clinical trials, clinical trial design is historically distorted by human **optimism bias** and **historical eligibility heuristics**, leading to overly restrictive exclusion criteria. This creates systemic **selection bias**, underrepresenting diverse demographics and delaying trial completion.
+* **Mechanism:** **Trial Pathfinder** uses an AI-driven framework to analyze real-world electronic health records (EHRs) and simulate clinical trials. It systematically tests how varying eligibility thresholds (e.g., specific lab values) affect overall hazard ratios and survival outcomes, identifying criteria that can be safely relaxed.
+* **Biotech Application:** When applied to advanced oncology trials (such as non-small-cell lung cancer), Trial Pathfinder doubled the pool of eligible patients on average, substantially increasing the representation of women, elderly patients, and minorities, while maintaining trial safety and efficacy endpoints.
+* **Source:** Liu et al. "Evaluating eligibility criteria of oncology trials using real-world data and AI." *Nature* 592, 629–633 (April 2021). [DOI: 10.1038/s41586-021-03430-5](https://doi.org/10.1038/s41586-021-03430-5)
+
 ## Broader Categories of AI-Addressable Bias in Biotech
 
 | Bias Type | Biotech Manifestation | AI Mitigation Strategy |
@@ -151,8 +187,6 @@ A comprehensive study on AI in healthcare decision-making found:
 5. **BD&L valuation** — AI-driven historical analysis can prevent overpayment for assets that have recently generated positive headlines, by providing context on how similar assets have performed over time.
 
 6. **The double-edged sword** — AI trained on biased historical data (e.g., clinical trials that underrepresented certain populations, or go/no-go decisions distorted by champion bias) can *amplify* rather than reduce bias. Debiasing mechanisms must be built into the system.
-
----
 
 *Research compiled: May 2026*
 *Sources: Nature Reviews Drug Discovery (Truebel & Seidler 2022), Drug Discovery Today (Bieske et al. 2023), California Management Review, PLOS Digital Health, Lucid Financials, Alacrita, Drug Patent Watch*

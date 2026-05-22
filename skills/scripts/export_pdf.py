@@ -31,53 +31,54 @@ def export_to_pdf(markdown_path, pdf_path):
         <style>
             @page {{
                 size: letter;
-                margin: 2cm;
+                margin: 1.8cm 1.8cm 1.8cm 1.8cm;
             }}
             body {{
                 font-family: Helvetica, Arial, sans-serif;
-                line-height: 1.5;
+                line-height: 1.25;
                 color: #333;
-                font-size: 11pt;
+                font-size: 10pt;
             }}
             h1 {{
-                font-size: 20pt;
+                font-size: 16pt;
                 color: #2c3e50;
                 border-bottom: 1px solid #3498db;
-                padding-bottom: 8px;
-                margin-bottom: 15px;
+                padding-bottom: 6px;
+                margin-top: 15px;
+                margin-bottom: 10px;
                 font-weight: normal;
             }}
             h2 {{
-                font-size: 14pt;
-                color: #2c3e50;
-                margin-top: 20px;
-                margin-bottom: 10px;
-                font-weight: bold;
-            }}
-            h3 {{
                 font-size: 12pt;
                 color: #2c3e50;
                 margin-top: 15px;
-                margin-bottom: 8px;
+                margin-bottom: 6px;
+                font-weight: bold;
+            }}
+            h3 {{
+                font-size: 10.5pt;
+                color: #2c3e50;
+                margin-top: 10px;
+                margin-bottom: 4px;
                 font-weight: bold;
             }}
             blockquote {{
-                margin: 10px 0;
-                padding: 8px 15px;
+                margin: 6px 0;
+                padding: 6px 12px;
                 background-color: #f8f9fa;
                 border-left: 3px solid #cbd5e1;
                 font-style: italic;
                 color: #475569;
             }}
             p {{
-                margin-bottom: 12px;
+                margin-bottom: 8px;
                 text-align: left;
             }}
             ul {{
-                margin-bottom: 12px;
+                margin-bottom: 8px;
             }}
             li {{
-                margin-bottom: 4px;
+                margin-bottom: 3px;
             }}
             strong {{
                 font-weight: bold;
@@ -94,14 +95,14 @@ def export_to_pdf(markdown_path, pdf_path):
             table {{
                 width: 100%;
                 border-collapse: collapse;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 9pt;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size: 8.5pt;
                 page-break-inside: avoid;
             }}
             th {{
                 text-align: left;
-                padding: 5px;
+                padding: 4px;
                 border: 1px solid #bdc3c7;
                 font-weight: bold;
                 color: #333;
@@ -109,7 +110,7 @@ def export_to_pdf(markdown_path, pdf_path):
                 vertical-align: top;
             }}
             td {{
-                padding: 5px;
+                padding: 4px;
                 border: 1px solid #bdc3c7;
                 color: #333;
                 word-wrap: break-word;
