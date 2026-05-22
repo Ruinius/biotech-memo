@@ -15,6 +15,7 @@ Below is the complete file and directory layout of the repository:
 
 * **`AGENTS.md`** - *[This File]* Primary reference for developers/agents. Contains structure, environment rules, and guidelines.
 * **`LICENSE`** - MIT License for this codebase.
+* **`README.md`** - Public-facing project documentation outlining overview, installation, custom skills, and execution commands.
 * **`docs/`** - Guidelines and documentation.
   * `docs/formatting.md` - Technical markdown formatting, layout, and typographic rules.
   * `docs/writing_style.md` - Core writing guidelines detailing tone, structure, and style.
