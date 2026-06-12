@@ -22,6 +22,15 @@ Below is the complete file and directory layout of the repository:
 * **`inputs/`** - Directory for primary source files (e.g., raw PDFs, text transcripts) provided by the user.
 * **`reference/`** - Reference materials that establish style and formatting (e.g., standard PDFs or pre-existing memos).
 * **`research/`** - Structured source-level research profiles generated during Step 4 of the workflow.
+  * `research/ai_native_biotechs.md` - Profiles on AI agents in clinical trials and peer-reviewed literature.
+  * `research/ai_reduce_bias.md` - Research on minimizing bias in AI models.
+  * `research/bleecker_bio_lynk.md` - Licensing agreement details for TYK2 inhibitor BLKR201.
+  * `research/chinese_clinical_assets.md` - Analysis of Chinese outbound licensing and clinical assets.
+  * `research/company_second_brain.md` - Studies on organizational memory and the Karpathy LLM Wiki.
+  * `research/formation_bio_series_d.md` - Series D funding and AI-native drug development platform overview.
+  * `research/riverview_bio_imidomics.md` - Licensing details for anti-CD226 monoclonal antibody Riverview Bio deal.
+  * `research/sanofi_openai_formation_bio.md` - Partnership analysis for OpenAI/Sanofi collaboration and the Muse tool.
+  * `research/synthetic_panel_experts.md` - Research on synthetic Key Opinion Leader (KOL) panels.
 * **`output/`** - Finished memo drafts in markdown, Word (.docx), and PDF formats.
   * `output/outline.md` - Structured, fact-grounded blueprint for the final executive memo.
 * **`skills/`** - Custom tools and workspace integrations.
